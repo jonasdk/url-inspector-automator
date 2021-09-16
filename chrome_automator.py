@@ -59,7 +59,7 @@ class ChromeAutomator():
 			#wait for action
 			if data["coverage"] == criteria:
 				await self.click_action(action, action_delay)
-		
+
 		return results
 
 
@@ -92,7 +92,7 @@ class ChromeAutomator():
 			print(action)
 			#pass short action name to JS function
 			await self.page.evaluate(self.js_clicker, action_name[action])
-			
+
 			#wait for action
 			print("waiting {delay}".format(delay=delay))
 			sleep(delay)
@@ -121,11 +121,3 @@ class ChromeAutomator():
 		results["url"] = url
 
 		return results
-
-
-
-
-
-
-
-
