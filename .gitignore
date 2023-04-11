@@ -106,3 +106,4 @@ venv.bak/
 # Chrome temp files
 chrome-dev/
 chrome.txt
+.DS_Store
